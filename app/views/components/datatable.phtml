@@ -1,0 +1,33 @@
+<div class="table-responsive pt-2">
+    <table class="table table-striped table-hover table-bordered" id="@datatable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Description <i class="fa fa-sort"></i></th>
+                <th>Type</th>
+                <th>Price <i class="fa fa-sort"></i></th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+            <tbody>
+                <?php foreach ($items as $item) { ?>
+                    <tr>
+                        <td><?php echo $item->Cod_Products; ; ?></td>
+                        <td><?php echo $item->Description; ?></td>
+                        <td><?php echo $item->Type; ?></td>
+                        <td><?php echo floatval($item->Price); ?></td>
+                        <td><?php  echo ($item->Active == 0)?  'No' :  'Yes'; ?></td>
+                        <td class="text-center">
+                            <a href="#" class="btnview cview" ><i class="material-icons"></i></a>
+                            <a href="#" class="btnedit cwarning"><i class="material-icons"></i></a>
+                            <a href="#" class="btndelete cdanger"><i class="material-icons"></i></a>
+                        </td>
+                    </tr>
+                <?php } ?>
+                    <tr class='visually-hidden' id="@ObjResult">
+                        <td colspan="6"></td>
+                    </tr>
+            </tbody>        
+        </thead>
+    </table>    
+</div>

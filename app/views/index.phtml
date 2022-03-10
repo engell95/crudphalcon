@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+        <title>PhalconApp Test</title>
+        <!-- Style -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="./public/css/bootstrap.css" rel="stylesheet">
+        <link href="./public/css/PhalconApp.css" rel="stylesheet">
+    </head>
+    <body>
+        <?php $this->partial('components/header'); ?>
+        <div class="container">
+            <?php echo $this->getContent(); ?>
+        </div>
+        <?php $this->partial('components/modals'); ?>
+    </body>
+    <!-- Javascript -->
+    <script src="./public/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./public/js/PhalconApp.js"></script>
+</html>
